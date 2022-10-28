@@ -13,7 +13,6 @@ require_once('global.php');
     <title><?php echo SITE_NAME ?> - Home</title>
 
     <link rel="shortcut icon" href="dino.png" type="image/x-icon">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
 
     <script src="<?php echo ASSETS_URL ?>js/script.js"></script>
 
