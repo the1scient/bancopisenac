@@ -9,9 +9,5 @@ $(function() {
 	    $field.removeClass('field--not-empty');
 	  }
 	});
-
-	
 });
-
-
 

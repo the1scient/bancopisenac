@@ -11,7 +11,7 @@ $password = htmlspecialchars($_POST['password']);
 
 $sql = $pdo->prepare("SELECT * FROM usuarios WHERE cpf = :cpf AND senha = :senha");
 $sql->bindValue(':cpf', $cpf);
-$sql->bindValue(':senha', $password);
+$sql->bindValue(':senha', md5($password));
 $sql->execute();
 
 echo $sql->rowCount();
@@ -27,8 +27,5 @@ if($sql->rowCount() > 0) {
 else {
     echo "Email ou senha incorretos";
 }
-
-
-
 
 ?>

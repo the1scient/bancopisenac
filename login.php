@@ -30,7 +30,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="<?php echo ASSETS_URL ?>images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+          <img src="<?php echo ASSETS_URL ?>images/login.jpg" alt="Image" class="img-fluid">
         </div>
         <div class="col-md-6 contents">
           <div class="row justify-content-center">
@@ -42,12 +42,12 @@
             <form action="<?php echo SITE_URL ?>kernel/login.php" method="post">
               <div class="form-group first">
                 <label for="username">CPF</label>
-                <input type="text" name="cpf" class="form-control" id="cpf">
+                <input type="text" name="cpf" class="form-control" id="cpf" required>
 
               </div>
               <div class="form-group last mb-4">
                 <label for="password">Senha</label>
-                <input type="password" name="password" class="form-control" id="password">
+                <input type="password" name="password" class="form-control" id="password" required>
                 
               </div>
               
@@ -56,9 +56,7 @@
                 <span class="ml-auto"><a href="#" class="forgot-pass">Esqueceu a senha?</a></span> 
               </div>
 
-              <input type="submit" value="Log In" class="btn btn-block btn-primary">
-
-              
+              <input type="submit" value="Log In" class="btn btn btn-success">
               
             </form>
             </div>
