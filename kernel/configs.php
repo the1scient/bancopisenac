@@ -14,6 +14,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $pdo->exec("SET NAMES 'utf8'");
 
 define('SITE_URL', 'http://localhost/');
+define('ASSETS_URL', SITE_URL . 'assets/');
 define('SITE_NAME', 'DinoBank');
 define('SITE_VERSION', '1.0');
 
